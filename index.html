@@ -82,38 +82,42 @@
 								</div>
 							</section>
 
-						<!-- Featured Project 1: Custom NeuralNet from Scratch -->
+						<!-- Featured Project 1: LearnNeuralNet -->
 							<section id="featured" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="Custom NeuralNet from Scratch" /></a>
+									<a href="https://github.com/Jort12/LearnNeuralNet" class="image" target="_blank" rel="noopener"><img src="images/learnneuralnet_logo.png" alt="LearnNeuralNet" /></a>
 									<div class="content">
-										<h2 class="major">Custom NeuralNet from Scratch</h2>
+										<h2 class="major">LearnNeuralNet &mdash; Neural Network Library from Scratch</h2>
 										<p>
-											Built a fully custom neural network from the ground up without relying on
-											deep learning frameworks. Implemented forward propagation, backpropagation,
-											gradient descent, and activation functions from scratch to deeply understand
-											the math and mechanics behind how neural networks learn. This project
-											demonstrates a strong foundational understanding of the core algorithms
-											that power modern deep learning.
+											A pip-installable neural network library built entirely with NumPy &mdash; no TensorFlow,
+											no PyTorch. Implements forward propagation, backpropagation, SGD with momentum, and
+											Xavier/He weight initialization from the ground up. Features a clean, Keras-style API
+											with <code>Sequential</code>, <code>Dense</code>, <code>compile</code>, <code>fit</code>,
+											and <code>predict</code> &mdash; plus model save/load, training history tracking, and
+											mini-batch support.
 										</p>
-										<a href="https://github.com/Jort12" class="special" target="_blank" rel="noopener">View on GitHub</a>
+										<p>
+											<strong>Install:</strong> <code>pip install LearnNeuralNet</code>
+										</p>
+										<a href="https://github.com/Jort12/LearnNeuralNet" class="special" target="_blank" rel="noopener">View on GitHub</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- Featured Project 2: Fuzzy Comp -->
+						<!-- Featured Project 2: Fuzzy Actor-Critic -->
 							<section id="featured-2" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="Fuzzy Comp Project" /></a>
+									<a href="https://github.com/Jort12" class="image" target="_blank" rel="noopener"><img src="images/pic03.jpg" alt="Fuzzy Actor-Critic Agent" /></a>
 									<div class="content">
 										<h2 class="major">Fuzzy Actor&ndash;Critic AI Agent</h2>
 										<p>
-											Designed and implemented AI agents for the Kessler Python game using
-											object-oriented programming, fuzzy logic, and reinforcement learning.
-											Built a Takagi&ndash;Sugeno fuzzy inference system trained with an
-											Actor&ndash;Critic framework, keeping interpretable rules while improving
-											performance through learning. This project bridges the gap between
-											explainable AI and adaptive decision-making.
+											Built an AI agent for the Kessler asteroid-defense game that fuses fuzzy logic with
+											reinforcement learning. Implemented a Takagi&ndash;Sugeno fuzzy inference system where
+											each rule's consequent parameters are tuned by an Actor&ndash;Critic framework &mdash;
+											the critic estimates state-value through weighted fuzzy rule activations, while the actor
+											adjusts rule outputs via TD-error gradients. The result is an agent that learns adaptive
+											behaviors while keeping its decision-making fully interpretable through human-readable
+											fuzzy rules.
 										</p>
 										<a href="https://github.com/Jort12" class="special" target="_blank" rel="noopener">View on GitHub</a>
 									</div>
@@ -133,10 +137,10 @@
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="Autonomous Recon Drone" /></a>
 											<h3 class="major">Autonomous Recon Drone</h3>
 											<p>
-												Developing an autonomous reconnaissance drone system that combines
-												computer vision, path planning, and real-time decision-making. The project
-												involves onboard ML inference for object detection and environment mapping,
-												enabling the drone to navigate and gather intelligence without manual control.
+												Building an autonomous drone system using AirSim for simulation, OpenCV for computer
+												vision, and reinforcement learning for flight control. The CV pipeline handles real-time
+												object detection via frame differencing and motion tracking, while the RL module trains
+												navigation policies in simulation before real-world deployment.
 											</p>
 										</article>
 									</section>
@@ -154,22 +158,23 @@
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="Image Classification" /></a>
-											<h3 class="major">Image Classification Experiments</h3>
+											<h3 class="major">Image Classification &mdash; CNNs &amp; Transfer Learning</h3>
 											<p>
-												Explored image classification techniques using convolutional neural networks
-												and transfer learning. Experimented with different architectures, data
-												augmentation strategies, and hyperparameter tuning to understand what drives
-												model performance on visual recognition tasks.
+												Built and compared convolutional neural networks on CIFAR-10, CIFAR-100, and the
+												Animals-10 dataset using Keras. Trained custom CNN architectures from scratch alongside
+												ResNet50 transfer learning models, experimenting with data augmentation and hyperparameter
+												tuning to push classification accuracy.
 											</p>
 										</article>
 
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="Game Project" /></a>
-											<h3 class="major">Game Project</h3>
+											<a href="#" class="image"><img src="images/solar_scavenger_gameplay.jpg" alt="Solar Scavenger" /></a>
+											<h3 class="major">Solar Scavenger</h3>
 											<p>
-												Built a game project applying software engineering fundamentals including
-												game loops, physics simulation, and rendering pipelines. Developed in C/C++
-												with a focus on performant, clean architecture and real-time systems programming.
+												A top-down space game built on a custom engine. Pilot a spaceship through asteroid fields,
+												collect resources, earn currency, and upgrade your ship's systems at the shop. Developed
+												with a team using C and a from-scratch engine covering game loops, physics, rendering,
+												and a full upgrade/economy system.
 											</p>
 										</article>
 
@@ -178,7 +183,7 @@
 											<h3 class="major">Airbnb Price Prediction</h3>
 											<p>
 												Built supervised ML models in Python to predict competitive Airbnb listing
-												prices using a public Kaggle dataset. Performed data cleaning, feature
+												prices across LA, San Francisco, and San Diego using Kaggle datasets. Performed data cleaning, feature
 												engineering, and missing-value handling, then trained and evaluated Decision
 												Tree, Random Forest, and AdaBoost models using RMSE and cross-validation.
 											</p>
@@ -197,15 +202,15 @@
 											<h3 class="major">Languages &amp; Frameworks</h3>
 											<p>
 												<strong>Languages:</strong> Python, C++, C<br>
-												<strong>ML:</strong> Supervised Learning, Reinforcement Learning, Fuzzy Logic, Neural Networks, Feature Engineering<br>
-												<strong>Libraries:</strong> scikit-learn, NumPy, Pandas, Matplotlib, Seaborn
+												<strong>ML:</strong> Supervised Learning, Reinforcement Learning, Fuzzy Logic, Neural Networks, CNNs, Feature Engineering<br>
+												<strong>Libraries:</strong> scikit-learn, NumPy, Pandas, Keras, Matplotlib, Seaborn, OpenCV
 											</p>
 										</article>
 
 										<article>
 											<h3 class="major">Tools &amp; Workflow</h3>
 											<p>
-												<strong>Tools:</strong> GitHub, Jupyter Notebook, VS Code, WSL, Valgrind<br>
+												<strong>Tools:</strong> GitHub, Jupyter Notebook, VS Code, WSL, AirSim, Valgrind<br>
 												<strong>Concepts:</strong> End-to-end ML Pipelines, Data Preprocessing, Model Evaluation, Cross-Validation, Hyperparameter Tuning
 											</p>
 											<ul class="actions">
