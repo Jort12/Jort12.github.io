@@ -111,13 +111,22 @@
 									<div class="content">
 										<h2 class="major">XFC &mdash; Explainable Fuzzy Competition</h2>
 										<p>
-											Built AI agents for the Kessler game &mdash; an asteroid-defense simulation where ships
-											shoot bullets and drop mines to destroy asteroids while avoiding collisions. Designed a
-											Takagi&ndash;Sugeno fuzzy inference system trained with an Actor&ndash;Critic reinforcement
-											learning framework. The critic estimates state-value through weighted fuzzy rule activations,
-											while the actor adjusts rule outputs via TD-error gradients &mdash; keeping decision-making
-											fully interpretable through human-readable fuzzy rules. The game supports multi-ship scenarios
-											and runs at 1000X+ real-time speed using compiled wheels for RL training.
+											Developed an AI controller for a 2D asteroid defense simulation (XFC 2026 entry),
+											where agents must navigate, shoot, and avoid collisions in real time. The system
+											combines reinforcement learning with a custom Takagi&ndash;Sugeno&ndash;Kang (TSK)
+											fuzzy inference framework to maintain interpretability while achieving
+											high-performance control.
+										</p>
+										<p>
+											The architecture integrates imitation learning (ANFIS pretraining and DAgger
+											refinement) with PPO-based reinforcement learning for final policy optimization.
+											A neuro-fuzzy actor&ndash;critic design is used, where fuzzy rule activations
+											provide an interpretable state-value representation and policy updates are driven
+											through TD-error signals over fuzzy memberships.
+										</p>
+										<p>
+											The environment supports multi-agent ship control and is optimized for large-scale
+											training, running at 1000&times;+ real-time speed using compiled simulation components.
 										</p>
 										<a href="https://github.com/Jort12" class="special" target="_blank" rel="noopener">View on GitHub</a>
 									</div>
